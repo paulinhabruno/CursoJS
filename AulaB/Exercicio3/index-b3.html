@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-size: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Novo Exercício</h1>
+        <br>
+        <h2>Dica de formatação de número</h2>
+        <ol>
+            <li>Para fixar um número decimal em casas específicas usa-se o .toFixed</li>
+            <li>Para colocar em valores monetários deve-se usar o comando: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</li>
+        </ol>
+
+    </div>
+
+
+    <script>
+        var nome = prompt('Qual é o seu nome?')
+        document.writeln(`Seu nome é ${nome} e tem ${nome.length} letras. <br>`)
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`)
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

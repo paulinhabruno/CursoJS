@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+*{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+body{
+    background-color: rgb(203, 187, 218);
+}
