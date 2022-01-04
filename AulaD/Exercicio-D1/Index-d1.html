@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de DOM</title>
+    <style>
+        body{
+            padding: 20px;
+            background-color: aqua;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos de <strong>DOM</strong> em JS. </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM</p>
+    <div>Clique aqui.</div>
+    <hr>
+
+    <h2>Aqui veja o resultado dos comando de JS.</h2>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //Dentro do [] vai qual parágrafo estou selecionando.
+        p1.style.color = 'red'
+        window.document.write('Está escrito assim: '+p1.innerText)
+    </script>
+    <hr>
+    <div>
+        <h2>Anotações</h2>
+        <ol type="a">
+            <li>DOM = Document Object Model. Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website.</li>
+            <li>DOM não funciona dentro do node.</li>
+            <li>DOM está presente quando está rodando JS dentro do navegador.</li>
+            <li>Tipos de seleção:</li>
+            <ol>
+                <li>Selecionando por marca: documente.getElementsByTagName('item selecionado')[entra a posição do item, caso tenha mais de 1, começando por 0]</li>
+                    <ol type="i">
+                        <li>Pode mudar o style</li>
+                        <li>innerText = mostra o resultado no navegador sem os comandos/tags filhos.</li>
+                        <li>innerHTML = Mostra o resultado formatado/com os comandos filhos. </li>
+                    </ol>
+                <li>Selecionando por ID: document.getElementById()</li>
+                <li>Selecionando por Name: document.getElementByName()</li>
+                <li>Selecionando por Classe: document.getElementByClass()</li>
+                <li>Selecionando por Selector: document.querySelector('coloca o seletor/tag')</li>
+            </ol>
+            <li></li>
+        </ol>
+
+    </div>
+</body>
+</html>
