@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./scriptF2.js"></script>
-    <link rel="stylesheet" defer href="./style-ex2.css">
-    <title>Verificador de idade</title>
+    <link rel="stylesheet" defer href="./style-exF2.css">
+    <title>Tabuada</title>
 </head>
 <body>
-    <h1>VERIFICADOR DE IDADE</h1>
+    <h1>TABUADA</h1>
     <section>
         <div>
-           <p>Ano de nascimento:
-               <input type="number" name="txtano" id="txtano" min="0" max="100" style="width: 100px;">
-           </p>
-           <p>Sexo:
-               <input type="radio" name="radsex" id="masc">
-               <label for="masc">Masculino</label>
-               <input type="radio" name="radsex" id="fem">
-               <label for="fem">Feminino</label>
-           </p>
-           <p>
-               <input type="button" value="Verificar" onclick="verificar()">
-           </p>
+           <p>Número:
+               <input type="number" name="num" id="txtnum" min="0" max="100" style="width: 100px;">
+
+               <input id="res" type="button" value="Gerar tabuada" onclick="tabuada()" >
+            
+            </p>
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10" style="display: block; margin: auto;">
+                <option>
+                    Digite o número no campo acima.
+                </option>
+            </select>
         </div>
 
-        <div id="res">Preencha os dados para ver o resultado.</div>
+        <div style="text-align: center;">Este é o resultado.</div>
     </section>
     <footer> &copy; Paula Bruno</footer>
 </body>
