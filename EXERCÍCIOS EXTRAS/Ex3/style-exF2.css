@@ -1,0 +1,59 @@
+@charset "UTF8";
+
+body{
+    background-color: rgb(102, 192, 236);
+    font: normal 16px Arial;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+select{
+    width: 200px;
+    
+}
+section{
+
+    height: auto;
+    width: 500px;
+    
+    color: black;
+    box-shadow: 5px 5px 10px #00000063;
+
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+
+}
+div{
+    text-align: left;
+    background-color: rgba(250, 231, 203, 0.651);
+    padding: 20px;
+
+    display: block;
+    margin: auto;
+}
+
+input{
+    height: 20px;
+    width: 150px;
+}
+
+#res{
+    height: 27px;
+    width: auto;
+    font-weight: bold;
+    background-color: rgb(202, 199, 199);
+    border-radius: 5px;
+    font-size: 15px;
+}
+footer{
+    padding-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+
+}
